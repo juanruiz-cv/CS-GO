@@ -31,7 +31,7 @@ export class HomeComponent {
           // console.log(this.list);
           this.items.push({ name: key, imgURL: (value as string) ?? '' });
         }
-        this.list = Array.from(new Set(this.list));
+        // this.list = Array.from(new Set(this.list));
       },
     });
   }

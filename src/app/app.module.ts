@@ -1,6 +1,7 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,7 @@ import { RoutesModule } from './components/routes/routes.module';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    LazyLoadImageModule,
     RoutesModule,
     LayoutModule,
   ],

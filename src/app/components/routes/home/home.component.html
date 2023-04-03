@@ -18,3 +18,17 @@
     </div>
   </div>
 </div>
+<ul class="pagination">
+  <li class="page-item" [class.disabled]="page == 1">
+    <a class="page-link" (click)="changePage(1)">Primera</a>
+  </li>
+  <li class="page-item" [class.disabled]="page == 1">
+    <a class="page-link" (click)="changePage(page - 1)">Anterior</a>
+  </li>
+  <li class="page-item" [class.disabled]="page == totalPages">
+    <a class="page-link" (click)="changePage(page + 1)">Siguiente</a>
+  </li>
+  <li class="page-item" [class.disabled]="page == totalPages">
+    <a class="page-link" (click)="changePage(totalPages)">Última</a>
+  </li>
+</ul>

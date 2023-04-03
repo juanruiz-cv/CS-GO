@@ -24,7 +24,7 @@
 }
 
 .cards {
-  height: 75vh;
+  height: 60vh;
   overflow-y: scroll;
   padding-bottom: 1rem;
 }
@@ -50,4 +50,17 @@
 
 .card p {
   font-weight: 600;
+}
+
+.pagination {
+  justify-content: center;
+}
+
+.pagination .page-item .page-link {
+  border-radius: 0;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #007bff;
+  border-color: #007bff;
 }

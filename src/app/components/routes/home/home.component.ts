@@ -14,24 +14,24 @@ export class HomeComponent {
   }
 
   items: { name: string; imgURL: string }[] = [];
-  list: string[] = [];
+  // list: string[] = [];
 
   getItems() {
     this._weaponsService.getItems().subscribe({
       next: (response) => {
         for (const [key, value] of Object.entries(response)) {
-          if (
-            key.includes('(Factory New)') &&
-            key.includes('Five') &&
-            !key.includes('StatTrak™') &&
-            !key.includes('Souvenir ')
-          ) {
-            this.items.push({ name: key, imgURL: (value as string) ?? '' });
-            this.list.push(key?.split(' | ', 1)[0]?.split(' ')?.at(-1) ?? '');
-          }
+          // if (
+          //   key.includes('(Factory New)') &&
+          //   key.includes('Five') &&
+          //   !key.includes('StatTrak™') &&
+          //   !key.includes('Souvenir ')
+          // ) {
+          // }
+          // this.list.push(key?.split(' | ', 1)[0]?.split(' ')?.at(-1) ?? '');
+          // console.log(this.list);
+          this.items.push({ name: key, imgURL: (value as string) ?? '' });
         }
         this.list = Array.from(new Set(this.list));
-        console.log(this.list);
       },
     });
   }

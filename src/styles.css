@@ -1,1 +1,259 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  /* Primary */
+  --primary50: #ebe9fe;
+  --primary100: #dedbfd;
+  --primary200: #beb7fb;
+  --primary300: #9c92f8;
+  --primary400: #7b6ef6;
+  --primary500: #5a4af4;
+  --primary600: #483bc3;
+  --primary700: #362c92;
+  --primary800: #251e62;
+  --primary900: #120f31;
+
+  /* Secondary */
+  --secondary50: #e4f4ff;
+  --secondary100: #d2ecfe;
+  --secondary200: #a5dbfe;
+  --secondary300: #78c8fd;
+  --secondary400: #4bb7fd;
+  --secondary500: #1ea5fc;
+  --secondary600: #1884ca;
+  --secondary700: #126297;
+  --secondary800: #0c4265;
+  --secondary900: #062032;
+
+  /* Tertary */
+  --tertary50: #f6edff;
+  --tertary100: #f0e2ff;
+  --tertary200: #e2c5ff;
+  --tertary300: #d3a7ff;
+  --tertary400: #c58aff;
+  --tertary500: #b66dff;
+  --tertary600: #9257cc;
+  --tertary700: #6d4199;
+  --tertary800: #492c66;
+  --tertary900: #241633;
+
+  /* Success */
+  --success50: #e1f9f2;
+  --success100: #cdf5e9;
+  --success200: #9bebd3;
+  --success300: #69e2bd;
+  --success400: #37d8a7;
+  --success500: #05ce91;
+  --success600: #04a574;
+  --success700: #037c57;
+  --success800: #02523a;
+  --success900: #01291d;
+
+  /* Error */
+  --error50: #ffecec;
+  --error100: #ffdfdf;
+  --error200: #ffc0c0;
+  --error300: #ffa0a0;
+  --error400: #ff8181;
+  --error500: #ff6161;
+  --error600: #cc4e4e;
+  --error700: #993a3a;
+  --error800: #662727;
+  --error900: #331313;
+
+  /* Warning */
+  --warning50: #fff5e9;
+  --warning100: #ffefdb;
+  --warning200: #ffdeb6;
+  --warning300: #ffce92;
+  --warning400: #ffbd6d;
+  --warning500: #ffad49;
+  --warning600: #cc8a3a;
+  --warning700: #99682c;
+  --warning800: #66451d;
+  --warning900: #33230f;
+
+  /* Grey */
+  --grey50: #ebeef5;
+  --grey100: #c3c8d4;
+  --grey200: #a8aebf;
+  --grey300: #8e95a9;
+  --grey400: #767e94;
+  --grey500: #61697f;
+  --grey600: #475069;
+  --grey700: #323b54;
+  --grey800: #20283e;
+  --grey900: #121829;
+
+  /* Black */
+  --black10: rgba(0, 0, 0, 0.1);
+  --black20: rgba(0, 0, 0, 0.2);
+  --black30: rgba(0, 0, 0, 0.3);
+  --black40: rgba(0, 0, 0, 0.4);
+  --black50: rgba(0, 0, 0, 0.5);
+  --black60: rgba(0, 0, 0, 0.65);
+  --black75: rgba(0, 0, 0, 0.75);
+  --black100: rgba(0, 0, 0, 1);
+
+  /* White */
+  --white10: rgba(255, 255, 255, 0.1);
+  --white20: rgba(255, 255, 255, 0.2);
+  --white30: rgba(255, 255, 255, 0.3);
+  --white40: rgba(255, 255, 255, 0.4);
+  --white50: rgba(255, 255, 255, 0.5);
+  --white60: rgba(255, 255, 255, 0.65);
+  --white75: rgba(255, 255, 255, 0.75);
+  --white100: rgba(255, 255, 255, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  min-height: 800px;
+  background: #1e3c72;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2a5298, #1e3c72);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2a5298, #1e3c72);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+h1 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 80px;
+  letter-spacing: 2%;
+}
+
+h2 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: 2%;
+}
+
+h3 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 2%;
+}
+
+h4 {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -1.5%;
+}
+
+h5 {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -1.5%;
+}
+
+h6 {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: -1.5%;
+}
+
+.body-large {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0%;
+}
+
+.body-regular {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+
+.body-small {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+
+.body-extra-small {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0%;
+}
+
+.caption {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0%;
+}
+
+.overline-regular {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 4%;
+}
+
+.overline-small {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 4%;
+}
+
+.link-regular {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2%;
+}
+
+.link-small {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 2%;
+}
+
+.link-extra-small {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2%;
+}
+
+.pt-70 {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}

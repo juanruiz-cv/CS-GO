@@ -1,0 +1,42 @@
+header {
+  height: 60px;
+  padding-top: 10px;
+  background: #1e3c72;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2a5298, #1e3c72);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,
+      #2a5298,
+      #1e3c72);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.logo {
+  height: 40px;
+}
+
+.main {
+  display: flex;
+  margin: 0;
+}
+
+.item-main {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--grey200);
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  min-width: min-content;
+  text-align: center;
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.link:hover {
+  background-color: var(--grey200);
+  color: var(--secondary900);
+}

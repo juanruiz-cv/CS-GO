@@ -1,0 +1,22 @@
+.card {
+  background-color: darkgray;
+  padding: 1rem;
+  margin: 2rem;
+  border-radius: 2rem;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card img {
+  background-color: rgba(206, 245, 252, 0.4);
+  border-radius: 2rem;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-weight: 600;
+}
